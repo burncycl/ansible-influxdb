@@ -41,7 +41,7 @@ ansible-vault encrypt secrets.yml
 
 ## Modify inventory
 
-Point this at the host you wish to deploy InfluxDB.
+Point this at the host you wish to deploy InfluxDB
 ```
 vi ./inventory
 ``` 

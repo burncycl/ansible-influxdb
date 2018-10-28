@@ -1,0 +1,22 @@
+---
+
+- name: Import influxdb GPG signing key
+  apt_key: url=https://repos.influxdata.com/influxdb.key state=present
+  tags: install
+
+- name: Add influxdb repository
+  apt_repository: repo='deb https://repos.influxdata.com/ubuntu trusty stable' state=present
+  tags: install
+
+- name: Install influxdb packages
+  apt: 
+    name: influxdb 
+    state: present
+  tags: install
+
+- name: Enable and start influxdb service 
+  systemd:
+    name: influxdb 
+    enabled: yes
+    state: started 
+  tags: install

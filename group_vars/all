@@ -1,0 +1,9 @@
+---
+
+influxdb_config: /etc/influxdb/influxdb.conf
+influxdb_pem_filepath: /etc/ssl/influxdb.pem
+influxdb_ip_address: 10.9.9.60 # Modify this and ./roles/configure-influxdb/main.yml "Create database using custom credentials -> hostname" if using ip address different than target host.
+influxdb_username: influx
+# Reference ansible-vault for password
+influxdb_database_name: statsmon
+

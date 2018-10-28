@@ -1,5 +1,6 @@
 ## 2018/09 BuRnCycL
 
+Ansible Playbook for InfluxDB using self-signed certificates. Prerequisite for ansible-grafana.
 
 ## Prerequisites
 Make sure the remote computer has the proper ansible ssh key in /root/.ssh/authorized_keys
